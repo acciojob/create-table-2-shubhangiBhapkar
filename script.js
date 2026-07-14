@@ -5,7 +5,7 @@ function createTable() {
 
 	 const table = document.getElementById("myTable");
 	
-	if(cn <= 0 || rn <=0 || isNan(rn) || isNan(cn)){
+	if(cn <= 0 || rn <=0 || isNaN(rn) || isNaN(cn)){
 		return;
 	}
 
@@ -17,7 +17,7 @@ function createTable() {
 		
 		for(let j=1;j<=cn;j++){
 			const cell = document.createElement("td");
-			cell.textContent = `Row-${i} Column-${j}`;
+			cell.textContent = `Row-${Math.floor(index / 2)} Column-${index % 2}`;
 			row.appendChild(cell);
 		}
 		table.appendChild(cell);
