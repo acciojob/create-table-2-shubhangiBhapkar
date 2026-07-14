@@ -15,9 +15,9 @@ function createTable() {
 		const row = document.createElement("tr");
 		
 		
-		for(let j=1;j<=cn;j++){
+		for(let j=1;j<=cn;j++) {
 			const cell = document.createElement("td");
-			cell.textContent = `Row-${Math.floor(${i} / ${rn})} Column-${${i} % ${cn}}`;
+			cell.textContent = `Row-${Math.floor(${i} / ${rn})} Column-${${i} % ${cn}}`);
 			row.appendChild(cell);
 		}
 		table.appendChild(cell);
