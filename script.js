@@ -17,7 +17,7 @@ function createTable() {
 		
 		for(let j=1;j<=cn;j++){
 			const cell = document.createElement("td");
-			cell.textContent = `Row-${Math.floor(index / 2)} Column-${index % 2}`;
+			cell.textContent = `Row-${Math.floor(${i} / ${rn})} Column-${${i} % ${cn}}`;
 			row.appendChild(cell);
 		}
 		table.appendChild(cell);
